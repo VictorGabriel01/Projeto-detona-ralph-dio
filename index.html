@@ -1,0 +1,126 @@
+<!-- 
+ * Declaração do tipo de documento HTML5.
+ -->
+ <!DOCTYPE html>
+
+ <!-- 
+  * Elemento raiz do documento HTML.
+  * O atributo lang define o idioma do conteúdo como português do Brasil.
+  -->
+ <html lang="pt-br">
+ 
+ <!-- 
+  * Seção que contém metadados sobre o documento.
+  -->
+ <head>
+ 
+     <!-- 
+      * Define a codificação de caracteres do documento como UTF-8.
+      -->
+     <meta charset="UTF-8">
+ 
+     <!-- 
+      * Define a configuração de visualização do documento para dispositivos móveis.
+      -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+     <!-- 
+      * Define o título do documento.
+      -->
+     <title>Detona Ralph</title>
+ 
+     <!-- 
+      * Links para fontes do Google Fonts.
+      -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+ 
+     <!-- 
+      * Links para folhas de estilo CSS.
+      -->
+     <link rel="stylesheet" href="src/styles/reset.css">
+     <link rel="stylesheet" href="src/styles/main.css">
+ 
+ </head>
+ 
+ <!-- 
+  * Seção que contém o conteúdo do documento.
+  -->
+ <body>
+ 
+     <!-- 
+      * Contêiner principal do jogo.
+      -->
+     <div class="container">
+ 
+         <!-- 
+          * Menu superior do jogo.
+          -->
+         <div class="menu">
+ 
+             <!-- 
+              * Seção do menu que exibe o tempo restante.
+              -->
+             <div class="menu-time">
+                 <h2 style="color: red;">Time left</h2>
+                 <h2 id="time-left">0</h2>
+             </div>
+ 
+             <!-- 
+              * Seção do menu que exibe a pontuação do jogador.
+              -->
+             <div class="menu-score">
+                 <h2 style="color: red;">Your Score</h2>
+                 <h2 id="score">0</h2>
+             </div>
+ 
+             <!-- 
+              * Seção do menu que exibe as vidas do jogador.
+              -->
+             <div class="menu-lives">
+                 <img src="src/images/player.png" alt="Imagem do jogador" height="60px">
+                 <h2>x3</h2> 
+             </div>
+ 
+         </div>
+ 
+         <!-- 
+          * Painel do jogo que contém os quadrados.
+          -->
+         <div class="panel">
+ 
+             <!-- 
+              * Linha de quadrados no painel.
+              -->
+             <div class="panel-row">
+                 <div class="square enemy" id="1"></div>
+                 <div class="square" id="2"></div>
+                 <div class="square" id="3"></div>
+             </div>
+ 
+             <div class="panel-row">
+                 <div class="square" id="4"></div>
+                 <div class="square" id="5"></div>
+                 <div class="square" id="6"></div>
+             </div>
+ 
+             <div class="panel-row">
+                 <div class="square" id="7"></div>
+                 <div class="square" id="8"></div>
+                 <div class="square" id="9"></div>
+             </div>
+ 
+         </div>
+ 
+     </div>
+ 
+     <!-- 
+      * Script que carrega o engine do jogo.
+      * O atributo defer faz com que o script seja carregado após o carregamento da página.
+      -->
+     <script defer src="src/scripts/engine.js"></script>
+ 
+ </body>
+ 
+ </html>

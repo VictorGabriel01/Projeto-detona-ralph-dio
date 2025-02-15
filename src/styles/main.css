@@ -1,0 +1,74 @@
+/* 
+ * Estilo para o container principal da página.
+ * Define o layout flexbox, direção da coluna, altura e imagem de fundo.
+ */
+ .container {
+    display: flex; /* Define o layout flexbox */
+    flex-direction: column; /* Define a direção da coluna */
+    height: 100vh; /* Define a altura do container */
+    background-image: url("../images/wall.png"); /* Define a imagem de fundo */
+}
+
+/* 
+ * Estilo para o menu superior da página.
+ * Define o layout flexbox, justificação, alinhamento, altura, largura e cor de fundo.
+ */
+.menu {
+    display: flex; /* Define o layout flexbox */
+    justify-content: space-evenly; /* Justifica o conteúdo */
+    align-items: center; /* Alinha os itens verticalmente */
+    height: 90px; /* Define a altura do menu */
+    width: 100%; /* Define a largura do menu */
+    background-color: #000000; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    border-bottom: 5px solid #ffd700; /* Define a borda inferior */
+}
+
+/* 
+ * Estilo para o painel de conteúdo da página.
+ * Define o espaçamento, layout flexbox, alinhamento e justificação.
+ */
+.panel {
+    margin-top: 1rem; /* Define o espaçamento superior */
+    display: flex; /* Define o layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Justifica o conteúdo */
+}
+
+/* 
+ * Estilo para os quadrados da página.
+ * Define a altura, largura, borda e cor de fundo.
+ */
+.square {
+    height: 150px; /* Define a altura do quadrado */
+    width: 150px; /* Define a largura do quadrado */
+    border: 1px solid #000000; /* Define a borda */
+    background-color: #11a876ea; /* Define a cor de fundo */
+}
+
+/* 
+ * Estilo para os inimigos da página.
+ * Define a imagem de fundo e tamanho da imagem.
+ */
+.enemy {
+    background-image: url("../images/ralph.png"); /* Define a imagem de fundo */
+    background-size: cover; /* Define o tamanho da imagem */
+}
+
+/* 
+ * Estilo para o menu de vidas da página.
+ * Define o layout flexbox e alinhamento.
+ */
+.menu-lives {
+    display: flex; /* Define o layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* 
+ * Estilo para os títulos do menu de tempo e pontuação da página.
+ * Define o espaçamento superior.
+ */
+.menu-time h2:nth-child(2),
+.menu-score h2:nth-child(2) {
+    margin-top: 10px; /* Define o espaçamento superior */
+}

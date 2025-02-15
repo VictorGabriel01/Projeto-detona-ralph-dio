@@ -1,0 +1,14 @@
+/* 
+ * Estilo global para todos os elementos da página.
+ * Define as configurações padrão para margem, preenchimento, tamanho de caixa, 
+ * família de fonte, peso da fonte e estilo da fonte.
+ */
+ * {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define o tamanho da caixa como o tamanho total, incluindo borda e preenchimento */
+    font-family: "Press Start 2P", system-ui; /* Define a família de fonte como "Press Start 2P" e, 
+    se não estiver disponível, usa a fonte do sistema */
+    font-weight: 400; /* Define o peso da fonte como regular (400) */
+    font-style: normal; /* Define o estilo da fonte como normal (não itálico) */
+}
